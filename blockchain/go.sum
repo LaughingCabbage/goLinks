@@ -1,0 +1,4 @@
+github.com/govice/golinks/block v0.0.0-20190730011947-94e806ef1fbb h1:m8gKmNZ8U3XT3F4NlCBTD+SCh4V7EfwSouIzggYc3Ps=
+github.com/govice/golinks/block v0.0.0-20190730011947-94e806ef1fbb/go.mod h1:NJKUuGjcZkxX7d5WcYdPMY7bxa5XXkM0RIVTa0E7wig=
+github.com/pkg/errors v0.8.1 h1:iURUrRGxPUNPdy5/HRSm+Yj6okJ6UtLINN0Q9M4+h3I=
+github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=

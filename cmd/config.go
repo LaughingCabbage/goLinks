@@ -56,9 +56,12 @@ var (
 
 //Config contains the structure used to create a configuration file
 type Config struct {
-	Name       string `json:"name"`
 	TestPath   string `json:"testpath"`
 	ConfigPath string `json:"configpath"`
+	Username   string `json:"username,omitempty"`
+	Password   string `json:"password,omitempty"`
+	Remote     string `json:"remote,omitempty"`
+	//todo oauth
 }
 
 // DefaultConfig returns the default configuration file structure
@@ -77,7 +80,7 @@ func DefaultConfig() (Config, error) {
 
 // WriteConfig writes a config file to the path defined in Config.ConfigPath
 func (c Config) WriteConfig() error {
-	configJSON, err := json.Marshal(c)
+	configJSON, err := json.MarshalIndent(c, "", "\t")
 	if err != nil {
 		return errors.Wrap(err, "Failed to marshal config json")
 	}
